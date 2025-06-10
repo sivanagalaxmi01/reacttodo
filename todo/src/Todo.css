@@ -3,6 +3,7 @@ body{
 }
 .to-do-container
 {
+    
     margin-top: 30px;
     margin-left: 550px;
     height: auto;
@@ -64,4 +65,8 @@ h1{
      margin-top:100px;
      text-shadow: 0px 0px 3px rgb(7, 218, 255);
      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inputfield:focus {
+   border-color: rgb(7, 218, 255);
+   border: none;
 }
