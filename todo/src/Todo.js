@@ -47,7 +47,9 @@ function Todo()
 
    return(
     <>
+    <h1 >TO-DO-LIST</h1>
      <div className='to-do-container'>
+      
         <div className='input'>
             <input
              type='text'
@@ -72,10 +74,10 @@ function Todo()
                                        marginTop: "20px"
                     }}>
                      <button onClick={() =>toggleTask(i)} style={{border:"none",backgroundColor:"#FAFAFA"}}>
-                        {task.completed ? <CircleCheck size={20}/> : <Circle size={20}/>}
+                        {task.completed ? <CircleCheck size={20} color='rgb(7, 218, 255)'/> : <Circle size={20}  color='rgb(7, 218, 255)'/>}
                      </button>
                      <span style={{textDecoration : task.completed ? "line-through" : "none"}}>{task.text}</span>
-                      <button onClick={()=>deleteTask(i)} style={{border:"none",backgroundColor:"#FAFAFA"}}><X/></button>
+                      <button onClick={()=>deleteTask(i)} style={{border:"none",backgroundColor:"#FAFAFA"}} ><X size={20} className='dlt'/></button>
                     </div>
                 )))            
                 }
